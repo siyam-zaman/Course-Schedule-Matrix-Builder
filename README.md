@@ -13,7 +13,7 @@
   <b>A modern, high-performance web application to parse university course offering PDFs, detect scheduling conflicts in real-time, pick sections, and generate official 14-column schedule matrices and weekly timetables.</b>
 </p>
 
-[Key Features](#-key-features) • [How It Works](#-how-it-works) • [Supported Format](#-table-structure) • [Getting Started](#-getting-started) • [Testing](#-testing) • [Architecture](#-architecture)
+[Key Features](#-key-features) • [Screenshots](#-screenshots) • [How It Works](#-how-it-works) • [Supported Format](#-table-structure) • [Getting Started](#-getting-started) • [Testing](#-testing) • [Architecture](#-architecture)
 
 </div>
 
@@ -30,6 +30,27 @@ Planning course registration manually from a 20+ page university schedule PDF is
 5. **Export & Print**: Export an official 14-column matrix or print directly to PDF once conflicts are resolved.
 
 > **🔒 100% Client-Side Privacy**: All PDF text extraction, table reconstruction, and conflict analysis occur locally in your browser via Web Workers. No documents or personal student data are ever uploaded to any server.
+
+---
+
+## 📸 Screenshots
+
+> **Workflow in Action** — These screenshots showcase the application's clean two-step upload process and its real-time schedule conflict engine.
+
+### 1. Upload & Course Selection — Empty State
+
+The initial landing screen presents a focused two-step workflow: upload the university offering PDF on the left, and select courses on the right (either by uploading an advising PDF or by entering course codes). The privacy guarantee badge and sample demo loader are readily accessible in the navbar.
+
+![Course Schedule Matrix Builder — Initial Upload Screen](screenshots/withoutanydata.png)
+
+### 2. Loaded Schedule with Real-Time Conflict Detection
+
+After parsing the offering PDF, selected courses are matched and their sections rendered as interactive cards. The conflict detector immediately surfaces overlapping class sessions in a red alert panel, highlighting conflicting time cells across the 14-column schedule matrix below. Export and Print actions remain locked until conflicts are resolved.
+
+![Course Schedule Matrix Builder — Loaded Data, Section Picker, Conflict Summary & 14-Column Matrix](screenshots/withdata.png)
+
+*Both screenshots captured at 100% zoom in Chrome. The schedule matrix supports responsive horizontal scrolling on smaller viewports.*
+
 
 ---
 
