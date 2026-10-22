@@ -187,6 +187,3 @@ Contributions, feedback, and issue reports are welcome!
 ## 📄 License
 
 Distributed under the **MIT License**. See `LICENSE` for more information.
-# Course-Schedule-Matrix-Builder
-# Course-Schedule-Matrix-Builder
-# Course-Schedule-Matrix-Builder
